@@ -1,23 +1,309 @@
-{% extends '_layout.swig' %}
-{% import '_macro/post.swig' as post_template %}
-{% import '_macro/sidebar.swig' as sidebar_template %}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>
+    
+    
 
-{% block title %}{{ title }}{% if theme.index_with_subtitle and subtitle %} – {{ subtitle }}{% endif %}{% endblock %}
+    
+    
 
-{% block page_class %}
-  {% if is_home() %}page-home{% endif -%}
-{% endblock %}
+    
+      
+        Codecode的博客
+      
+    
+  </title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
 
-{% block content %}
-  <section id="posts" class="posts-expand">
-    {% for post in page.posts %}
-      {{ post_template.render(post, true) }}
-    {% endfor %}
-  </section>
+  
+  
 
-  {% include '_partials/pagination.swig' %}
-{% endblock %}
+  
+  
+    <link rel="stylesheet" href="https://unpkg.com/@docsearch/css@3.5.2/dist/style.css">
+    
+<link rel="stylesheet" href="/css/plugins/docsearch.css">
 
-{% block sidebar %}
-  {{ sidebar_template.render(false) }}
-{% endblock %}
+  
+
+  <link rel="stylesheet" href="https://unpkg.com/lxgw-wenkai-screen-webfont@1.7.0/lxgwwenkaiscreen.css">
+
+  
+  
+<link rel="stylesheet" href="/fonts/sea-font.css">
+
+
+  
+  
+<link rel="stylesheet" href="/css/main.css">
+
+
+  
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Codecode的博客">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Codecode的博客">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Yanxiang Zeng">
+<meta name="twitter:card" content="summary">
+
+  <style>
+    :root {
+      --sea-color-primary: #10b981;
+    }
+  </style>
+
+  
+<script src="/js/global.js"></script>
+
+
+  <script defer>
+    window.initThemeKey();
+  </script>
+<meta name="generator" content="Hexo 7.2.0"></head>
+<body>
+  <header class="sea-header">
+    <nav class="sea-nav-wrap">
+  <h1 class="sea-nav-logo" title="">
+    <a href="/">Codecode的博客</a>
+  </h1>
+  <div class="sea-nav-menus">
+    <div class="sea-menu-pc-wrap">
+  
+    <a
+      class="sea-menu-link"
+      
+      href="/"
+    >
+      Home
+    </a>
+  
+    <a
+      class="sea-menu-link"
+      
+      href="/archives/"
+    >
+      归档
+    </a>
+  
+    <a
+      class="sea-menu-link"
+      
+      href="/tags/"
+    >
+      标签
+    </a>
+  
+    <a
+      class="sea-menu-link"
+      
+      href="/categories/"
+    >
+      分类
+    </a>
+  
+    <a
+      class="sea-menu-link"
+      
+      href="/about/"
+    >
+      关于
+    </a>
+  
+</div>
+
+    <div id="sea-mobile-nav-toggle">
+      <i class="sea-font">bars</i>
+    </div>
+  </div>
+</nav>
+  </header>
+  <main id="sea-main-wrapper">
+    <section class="sea-post-list">
+  
+    <div class="sea-post-item" style="animation-delay: 0.0s;">
+      <h2 class="sea-post-title">
+        <a class="sea-post-link" href="/2024/06/22/%E5%85%B3%E4%BA%8E%E5%BD%A2%E5%BC%8F%E5%B9%82%E7%BA%A7%E6%95%B0%E7%9A%84%E4%BB%A3%E6%95%B0%E9%97%AD%E5%8C%85/">
+          关于形式幂级数的代数闭包
+        </a>
+      </h2>
+      <div class="sea-post-line"></div>
+      <div class="sea-post-abstract">
+        
+        关于形式幂级数的代数闭包
+$\text{Log :}$
+$\text{2022.12.17\;\;18:52}$ 开始施工
+$\text{2022.12.17\;\;20:54}$...
+      </div>
+      <div class="sea-post-meta">
+        <div class="sea-post-time">
+  <i class="sea-font">date</i>
+  <time datetime="2024-06-21T16:35:08.000Z">2024-06-22</time>
+</div>
+        
+        
+  <div class="sea-post-tags">
+    <i class="sea-font">tag</i>
+    <a class="tag-link" href="/tags/Math/" rel="tag">Math</a>
+  </div>
+
+      </div>
+      
+    </div>
+  
+    <div class="sea-post-item" style="animation-delay: 0.1s;">
+      <h2 class="sea-post-title">
+        <a class="sea-post-link" href="/2024/06/21/hello-world/">
+          Hello World
+        </a>
+      </h2>
+      <div class="sea-post-line"></div>
+      <div class="sea-post-abstract">
+        
+        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or...
+      </div>
+      <div class="sea-post-meta">
+        <div class="sea-post-time">
+  <i class="sea-font">date</i>
+  <time datetime="2024-06-21T10:49:33.811Z">2024-06-21</time>
+</div>
+        
+        
+      </div>
+      
+    </div>
+  
+
+  
+</section>
+  </main>
+  <footer id="sea-footer-container">
+  <div class="sea-footer-row">
+    <div class="sea-footer-menu-link">
+      
+    </div>
+    <span class="split-line">|</span>
+    <span id="busuanzi_container_site_uv">
+      UV: <span id="busuanzi_value_site_uv"></span>
+    </span>
+  </div>
+  
+  
+  <div class="sea-footer-row">
+    <div class="sea-footer-copyright">
+      <span>©</span>
+      
+        2024
+      
+      <span>·</span>
+      Yanxiang Zeng
+    </div>
+    <span class="split-line">|</span>
+    <div class="sea-footer-theme-by">
+      Theme by <a class="theme" href="https://github.com/hai-zou/hexo-theme-sea" target="_blank">Sea</a>
+    </div>
+  </div>
+</footer>
+  <div class="sea-menu-mobile-wrap">
+  <div class="sea-menu-mobile-inner">
+    
+      <a
+        class="sea-menu-link"
+        
+        href="/"
+      >
+        Home
+      </a>
+    
+      <a
+        class="sea-menu-link"
+        
+        href="/archives/"
+      >
+        归档
+      </a>
+    
+      <a
+        class="sea-menu-link"
+        
+        href="/tags/"
+      >
+        标签
+      </a>
+    
+      <a
+        class="sea-menu-link"
+        
+        href="/categories/"
+      >
+        分类
+      </a>
+    
+      <a
+        class="sea-menu-link"
+        
+        href="/about/"
+      >
+        关于
+      </a>
+    
+  </div>
+</div>
+<div id="sea-mobile-nav-dimmer"></div>
+  <div class="sea-float-tools-wrapper">
+  
+  <a class="sea-float-tools-btn" id="sea-back-to-top" href="#">
+    <i class="sea-font">arrow-up</i>
+  </a>
+
+  
+  
+    <a class="sea-float-tools-btn" id="sea-search-icon">
+      <i class="sea-font">search</i>
+    </a>
+    <div id="sea-search-input"></div>
+  
+
+  
+  <div class="sea-float-tools-btn" id="sea-theme-mode">
+    <i class="sea-font">theme</i>
+
+    <ul class="sea-theme-select-box">
+      <li class="sea-theme-select-item" id="sea-theme-auto">Follow System</li>
+      <li class="sea-theme-select-item" id="sea-theme-light">Light Mode</li>
+      <li class="sea-theme-select-item" id="sea-theme-dark">Dark Mode</li>
+    </ul>
+  </div>
+</div>
+
+  
+<script src="/js/mobile_nav.js"></script>
+
+
+<script src="/js/theme_toggle.js"></script>
+
+
+<script src="/js/index.js"></script>
+
+
+
+  <script type="module">
+    import "https://unpkg.com/@docsearch/js@3.5.2/dist/umd/index.js";
+
+    docsearch({
+      container: '#sea-search-input',
+      appId: '',
+      apiKey: '',
+      indexName: '',
+    });
+  </script>
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</body>
+</html>
